@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information:</legend>
+            Name: <input type="text" name="name" required><br>
+            Email: <input type="email" name="email" required><br>
+            Date of Birth: <input type="date" name="dob" required><br>
+        </fieldset>
+        <br>
+        Country: 
+        <select name="country" required>
+            <option value="">Select a country</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="japan">Japan</option>
+            <option value="china">China</option>
+            <option value="india">India</option>
+            <option value="brazil">Brazil</option>
+           
+        </select>
+        <br>
+        Interests:<br>
+        <input type="checkbox" name="interest1" value="Interest1"> Interest1<br>
+        <input type="checkbox" name="interest2" value="Interest2"> Interest2<br>
+        <input type="checkbox" name="interest3" value="Interest3"> Interest3<br>
+        <input type="checkbox" name="interest4" value="Interest4"> Interest4<br>
+        <input type="checkbox" name="interest5" value="Interest5"> Interest5<br>
+        <br>
+        Password: <input type="password" name="password" required><br>
+        Confirm Password: <input type="password" name="confirm_password" required><br>
+        <details>
+            <summary>Terms and Conditions</summary>
+            <p>...Terms and Conditions content...</p>
+        </details>
+        <br>
+        <input type="checkbox" name="terms" required> I agree to the Terms and Conditions<br>
+        <input type="submit" value="Submit" disabled>
+    </form>
+  
+</body>
+</html>
