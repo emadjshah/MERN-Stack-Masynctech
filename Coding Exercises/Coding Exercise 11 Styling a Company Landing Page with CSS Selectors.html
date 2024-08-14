@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Landing Page</title>
+    <style>
+        /* Universal selector to set box-sizing for all elements */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Body selector to set the font and background */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Class selector for the header */
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ID selector for the main content area */
+        #main-content {
+            padding: 20px;
+        }
+
+        /* Descendant selector to style paragraphs inside main content */
+        #main-content p {
+            color: #555;
+        }
+
+        /* Child selector to style only direct list items under .nav */
+        .nav > li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Attribute selector to style links with a target attribute */
+        a[target="_blank"] {
+            color: red;
+        }
+
+        /* Pseudo-class selector for hover state on links */
+        a:hover {
+            color: green;
+        }
+
+        /* First child pseudo-class selector for special styling of the first paragraph */
+        #main-content p:first-child {
+            font-size: 1.2em;
+        }
+
+        /* Last child pseudo-class selector for the last paragraph */
+        #main-content p:last-child {
+            color: blue;
+        }
+
+        /* Pseudo-element selector for adding content before the footer */
+        .footer::before {
+            content: 'Footer Content';
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Class selector for the footer */
+        .footer {
+            background-color: #ddd;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Company</h1>
+    </div>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" target="_blank">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="main-content">
+        <p>Welcome to our company website!</p>
+        <p>Here you can find information about our services and team.</p>
+        <p>Last paragraph with a special color.</p>
+    </div>
+    <div class="footer">
+        &copy; 2023 My Company
+    </div>
+</body>
+</html>

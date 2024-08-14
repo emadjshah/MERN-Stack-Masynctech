@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced CSS Selector Challenge</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main card container styling using attribute selector */
+        div[class^='profile-card'] {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Profile image styling */
+        div[class^='profile-card'] img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Profile details */
+        .profile-details {
+            padding: 20px;
+        }
+
+        /* Name styling - direct child combinator */
+        .profile-details > .name {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        /* Job title styling - adjacent sibling combinator */
+        .profile-details > .name + .title {
+            color: rgb(108, 117, 125);
+        }
+
+        /* Contact info - general sibling combinator */
+        .profile-details > .name ~ .contact-info {
+            margin-top: 10px;
+        }
+
+        /* Link styling - attribute value contains selector */
+        .contact-info a[href^='mailto'] {
+            color: blue;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a[href^='mailto']:hover {
+            color: darkblue;
+        }
+
+        /* Pseudo-element ::before for list items */
+        .contact-info li::before {
+            content: '•';
+            color: rgb(0, 123, 255); 
+            margin-right: 5px;
+        }
+
+        /* Pseudo-class :nth-child for alternating list item colors */
+        .contact-info li.even {
+            background-color: rgb(248, 249, 250);
+        }
+
+        /* Pseudo-class :not to style non-active status */
+        .status :not(.active) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="https://cdn.pixabay.com/photo/2023/10/01/12/56/shih-tzu-8287355_1280.jpg" alt="Profile Image">
+        <div class="profile-details">
+            <div class="name">Jane Doe</div>
+            <div class="title">Web Developer</div>
+            <ul class="contact-info">
+                <li class="even">Email: <a href="mailto:email@example.com">email@example.com</a></li>
+                <li class="odd">Phone: 123-456-7890</li>
+                <li class="even">Website: <a href="http://www.example.com">www.example.com</a></li>
+            </ul>
+            <div class="status">Status: <span class="active">Active</span></div>
+        </div>
+    </div>
+</body>
+</html>

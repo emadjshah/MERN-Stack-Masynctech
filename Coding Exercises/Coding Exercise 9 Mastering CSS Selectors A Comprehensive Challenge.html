@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Challenge</title>
+    <style>
+/* Selects all <p> elements and changes their font color to blue */
+    p {
+        color: rgba(0, 0, 255, 1);
+    }
+    
+    /* Selects the element with id="special" and changes its background color */
+    #special {
+        background-color: rgba(255, 255, 0, 1); /* Yellow */
+    }
+    
+    /* Selects all elements with class="highlight" and makes the text bold */
+    .highlight {
+        font-weight: bold;
+    }
+    
+    /* Selects the first <ul> element in the document and changes its text color */
+    ul:first-of-type {
+        color: rgba(0, 128, 0, 1); /* Green */
+    }
+    
+    /* Selects the first <li> element of each <ul> and changes its text decoration */
+    ul li:first-child {
+        text-decoration: underline;
+    }
+    
+    /* Selects input elements of type 'text' and changes the border color */
+    input[type="text"] {
+        border: 1px solid rgba(255, 0, 0, 1); /* Red */
+    }
+    
+    /* Selects all <p> elements inside <div> and changes their font size */
+    div > p {
+        font-size: 18px; 
+    }
+    
+    /* Selects the last <p> element in the document */
+    p:last-of-type {
+        border: 2px solid rgba(0, 0, 0, 1); /* Black */
+    }
+    
+    /* Hover effect on links */
+    a:hover {
+        color: rgba(255, 165, 0, 1); /* Orange */
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph inside a div.</p>
+        <p id="special">This is a special paragraph with an ID.</p>
+        <p class="highlight">This is a highlighted paragraph.</p>
+    </div>
+    <ul>
+        <li>First item of first list</li>
+        <li>Second item</li>
+    </ul>
+    <ul>
+        <li>First item of second list</li>
+        <li>Second item</li>
+    </ul>
+    <input type="text" placeholder="Text input">
+    <p>A standalone paragraph.</p>
+    <a href="#">Hover over this link</a>
+</body>
+</html>
