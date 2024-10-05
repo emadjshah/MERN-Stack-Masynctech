@@ -106,7 +106,7 @@ const sentence = `The ${fruit} is  ${color}`
 //  console.log(sentence);
 
 //---------
-//==TOLOWER AND TOUPPER CASE===
+//==toLOWER AND toUPPER CASE===
 //----------
 
 //toUpperCase()
@@ -211,6 +211,7 @@ const index = sentences.indexOf('hello');
 //---------
 //==STRING TRIM===
 //----------
+
 //Trimming user input
 const userInput = '   emma@gmail.com   ';
 const emailTrimmed = userInput.trim()
@@ -227,25 +228,24 @@ const cleanString = stringsWithBreaks.trim()
 const originalText = 'This is an old text.';
 const updatedText = originalText.replace('Old','new');
 
-//Replace all occurances
-const repititiveText = 'old text with old words';
-const replaceAll = repititiveText.replace(/old/g, 'new')
+//Replace all occurrences
+const repetitiveText = 'old text with old words';
+const replaceAll = repetitiveText.replace(/old/g, 'new')
 
 
 
 //---------
-//==STRING LASTINDEXOF===
+//==String.lastIndexOf() ===
 //----------
 //Basic usage
-const myText = 'apple organe, apple, banana';
+const myText = 'apple orange, apple, banana';
 const lastIndx = myText.lastIndexOf('apple')
-
 //Specifying the from index
 // const result = myText.lastIndexOf('apple',12)
 
 
 //---------
-//==STRING INCLUDES===
+//== String.includes() ===
 //----------
 
 //Basic usage
@@ -260,7 +260,7 @@ const result = myText2.includes('apple',8);
 
 
 //---------
-//==STRING CONVERSION===
+//==Converting to String Using `String()===
 //----------
 
 //Converting a number to a string;
@@ -270,25 +270,28 @@ const strNum= String(num)
 //Converting a boolean to a string;
 const boolVal = true
 const strBool = String(boolVal)
+// console.log(typeof strBool);
 
-//Converting  an array to a string;
+//Converting an array to a string;
 
 const arr = [1,2,3];
 // console.log(typeof String(arr));
 
-//Converting  object to a string;
+//Converting a object to a string;
 
 const obj = {name:'Emma', age:25}
 // console.log(typeof String(obj));
 
 //Converting  null and undefined to a string;
-const str1Null = String(null)
 
+const str1Null = String(null)
 // console.log(typeof str1Null);
 
+
 //---------
-//==.toString()===
+//== Converting to String Using `.toString() ===
 //----------
+
 //Convert number to string
 
 const num1 = 25
@@ -296,22 +299,24 @@ const strNum1 = num1.toString()
 //console.log( typeof strNum1);
 
 //Convert boolean to string
-const boolVal2 = false;
 
+const boolVal2 = false;
 // console.log(typeof boolVal2.toString());
 
 //---------
-//==STRING TO NUMBER===
+//==Converting from String To Numbers===
 //----------
-//Converting Pixel Value to Number with parseInt()
+
+// Example 1: Converting Pixel Value to Number with parseInt()
+
 const pixelvalueAsString = '42px';
 // const convertedVal = parseInt(pixelvalueAsString)
 // console.log( convertedVal+10);
 
 // Example 2: Converting Dimension String to Number with parseFloat()
+
 const dimensionStr = "42.5px"
 //  const convertedVal = parseFloat(dimensionStr)
-
 
  // Example 3: Converting Age Input to Number using Number()
 
@@ -321,6 +326,7 @@ const dimensionStr = "42.5px"
 //  console.log( convertedVal + 10);
 
  // Example 4: Quick Conversion using Unary + Operator
+
  const scoreStr = '100';
 //  const convertedVal = +scoreStr
 
@@ -328,8 +334,11 @@ const dimensionStr = "42.5px"
 
 
 //-------
-//String to Boolean
+
+//  Converting from String To Booleans
+
 //-------
+
 // Example 1: Using Boolean() for Form Validation
 
 const usernameInput = 'Thomas';
@@ -347,6 +356,6 @@ const emptyField = "";
  // Example 3: Using Double Negation !! for Quick Conversion
 
  const emailInput = "emma@gmail.com";
- const convertedVal = !!emailInput
+ //const convertedVal = !!emailInput
 
- console.log(convertedVal);
+ // console.log(convertedVal);
