@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #recipes {
     background-color: #fae5d3;
     padding:15px;
@@ -23,4 +24,31 @@ padding: 15px;
 #reviews h3 {
     color: #34495e;
     
+=======
+#recipes {
+    background-color: #fae5d3;
+    padding:15px;
+}
+
+#recipes .recipe{
+    border: 1px solid #eb984b;
+    padding:10px;
+    margin:10px;
+}
+#recipes h3 {
+    color:#ba4a00;
+}
+#reviews {
+    background-color: #d5dbdb;
+padding: 15px;
+}
+#reviews .review {
+    border: 1px solid #85929e;
+    padding: 10px;
+    margin: 10px;
+}
+#reviews h3 {
+    color: #34495e;
+    
+>>>>>>> 8708d6b6436c4c926cafd0f1463e10bc0c381447
 }

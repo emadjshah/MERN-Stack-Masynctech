@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f9f9f9;
@@ -29,3 +30,36 @@ p,ul,ol {
     background-color: #ffbbe5;
     color:#8b4513;
 }
+=======
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+#recipe-container {
+    width:80%;
+    font-size: 1em;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.title {
+    font-size: 2em;
+    color:#8b4513;
+}
+p,ul,ol {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+::selection {
+    background-color: #ffbbe5;
+    color:#8b4513;
+}
+
+::webkit-selection {
+    background-color: #ffbbe5;
+    color:#8b4513;
+}
+>>>>>>> 8708d6b6436c4c926cafd0f1463e10bc0c381447

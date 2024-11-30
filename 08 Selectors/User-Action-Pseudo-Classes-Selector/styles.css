@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(120deg,#84fab0 0%, #8fd3f4);
@@ -59,4 +60,67 @@ button{
 }
 button:hover {
     background-color: #0aabab;
+=======
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(120deg,#84fab0 0%, #8fd3f4);
+    color: #333;
+}
+#signup-box {
+    width: 400px;
+    margin: 50px auto;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0, 0.25);
+}
+
+h1 {
+    font-size: 32px;
+    margin: 20px;
+}
+p {
+    margin:20px ;
+}
+.input-group {
+    margin:20px ;
+}
+label {
+    display:block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 30px); /* Adjust width to accommodate padding */
+    padding:15px;
+    margin: 5px 0 20px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+
+}
+input:hover{
+    background-color: #e6e6e6;
+    
+}
+
+input:focus{
+    background-color: #e6e6e6;
+    box-shadow:0 0 50x #81ecec;
+}
+button{
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #81ecec;
+    font-size: 16px;
+    color:#f2f2f2;
+    border: none;
+    border-radius: 50px;
+    transition: background-color:0.3s ease;
+    cursor:pointer;
+}
+button:hover {
+    background-color: #0aabab;
+>>>>>>> 8708d6b6436c4c926cafd0f1463e10bc0c381447
 }

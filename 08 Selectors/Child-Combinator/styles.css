@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #departments {
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #d5d8d6;
@@ -33,3 +34,40 @@
     color: #f1c40f;
     font-weight: bold;
 }
+=======
+#departments {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #d5d8d6;
+    margin: 20px;
+    padding: 20px;
+}
+
+.department {
+    background-color: #f4f6f7; /* Remove extra semicolon */
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.department > h2 {
+    color: #216186;
+    border-bottom: 2px solid #aed6f1;
+}
+
+.department .course { /* Adjusted selector */
+    color: #3498db;
+    padding-left: 20px;
+}
+
+.faculty {
+    background-color: #fef9e7;
+    padding: 10px;
+    border: 1px dashed #f1c40f;
+    margin-top: 10px;
+}
+
+.faculty p {
+    color: #f1c40f;
+    font-weight: bold;
+}
+>>>>>>> 8708d6b6436c4c926cafd0f1463e10bc0c381447

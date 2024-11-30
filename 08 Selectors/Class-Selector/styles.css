@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .main-title {
     color:rgb(106, 13, 193);
     text-align: center;
@@ -36,4 +37,44 @@
 .contact-info {
     font-size:1em;
     color:blue;
+=======
+.main-title {
+    color:rgb(106, 13, 193);
+    text-align: center;
+    font-size:2.5em;
+}
+.tagline {
+    color:rgb(156, 77, 230);
+    text-align: center;
+    font-size:1.5em;
+    font-style: italic;
+}
+
+.featured-books
+{ background-color: rgb(224, 224, 75);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.section-title {
+    color: rgb(152, 65, 233);    
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.book-title {
+    color: blue;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+.contact {
+    background-color: #e6e6fa;
+    padding: 15px;
+    margin:20px;
+    border-radius: 10px;
+}
+.contact-info {
+    font-size:1em;
+    color:blue;
+>>>>>>> 8708d6b6436c4c926cafd0f1463e10bc0c381447
 }

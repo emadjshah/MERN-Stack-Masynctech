@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 !DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,3 +60,66 @@
     </footer>
 </body>
 </html>
+=======
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Selectors Exercise</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .page-header {
+            background-color: rgba(0, 0, 255, 1); 
+            text-align: center;
+            color: rgba(255, 255, 255, 1); 
+        }
+
+        .page-header h1 {
+            font-size: 24px; 
+        }
+
+        .highlight {
+            background-color: rgba(255, 255, 0, 0.5); 
+            padding-left: 10px;
+            color: rgba(255, 0, 0, 1);
+        }
+        .sidebar > ul > li:first-child {
+            font-weight: bold;
+        }
+        
+        #main-article p:last-child {
+            font-style: italic; 
+        }
+        
+        footer {
+            background-color: rgba(128, 128, 128, 1); 
+            text-align: center;
+            border-top: 3px solid rgba(0, 0, 0, 1); 
+        }
+
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <h1>Welcome to CSS Selectors Exercise</h1>
+    </header>
+    <section class="content">
+        <article id="main-article">
+            <h2>Article Heading</h2>
+            <p>First paragraph of the article.</p>
+            <p class="highlight">A highlighted paragraph with important information.</p>
+            <p>Last paragraph of the article.</p>
+        </article>
+        <aside class="sidebar">
+            <ul>
+                <li class="active">Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </aside>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2023 by CSS Masters</p>
+    </footer>
+</body>
+</html>
+>>>>>>> 8708d6b6436c4c926cafd0f1463e10bc0c381447
